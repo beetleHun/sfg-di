@@ -1,6 +1,7 @@
 package beetle.springframework.beetledi;
 
 import beetle.springframework.beetledi.controller.ConstructorInjectedController;
+import beetle.springframework.beetledi.controller.I18nController;
 import beetle.springframework.beetledi.controller.MyController;
 import beetle.springframework.beetledi.controller.PrimaryController;
 import beetle.springframework.beetledi.controller.PropertyInjectedController;
@@ -34,6 +35,10 @@ public class BeetleDiApplication {
         System.out.println("------ Primary");
         PrimaryController primaryController = (PrimaryController) ctx.getBean("primaryController");
         System.out.println(primaryController.getGreeting());
+
+        System.out.println("------ I18n");
+        I18nController i18nController = (I18nController) ctx.getBean("i18nController");
+        System.out.println(i18nController.getGreeting());
     }
 
 }
