@@ -1,4 +1,4 @@
-package guru.springframework.sfgdi.services;
+package guru.springframework.pets.service;
 
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
