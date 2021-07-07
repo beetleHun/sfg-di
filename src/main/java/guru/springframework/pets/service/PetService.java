@@ -6,4 +6,5 @@ package guru.springframework.pets.service;
 public interface PetService {
 
     String getPetType();
+
 }
