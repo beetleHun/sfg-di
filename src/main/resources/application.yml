@@ -1,9 +1,22 @@
 spring:
   profiles:
-    active: dog, EN, dev
+    active:
+      - dog
+      - EN
+      - prod
 #    active: dog, EN, qa
 
 guru:
   username: defaultUser
   password: defaultPassword
   jdbcurl: defaultJdbcUrl
+
+---
+
+spring:
+  profiles: prod
+
+guru:
+  username: prodUser
+  password: prodPassword
+  jdbcurl: prodJdbcUrl
